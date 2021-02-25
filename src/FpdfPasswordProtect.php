@@ -2,12 +2,14 @@
 
 namespace Owenoj\FpdfPasswordProtect;
 
+use Owenoj\Scripts\FPDF_Protection;
+
 class FpdfPasswordProtect
 {
     public $pdf;
     public function __construct()
     {
-        $this->pdf = new \FPDF_Protection();
+        $this->pdf = new FPDF_Protection();
     }
     public static function encryptPdf($file,$password,$destinationFileName)
     {

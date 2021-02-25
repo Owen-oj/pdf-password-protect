@@ -18,7 +18,8 @@
     "require": {
         "php": "^7.3",
         "illuminate/support": "^6.0|^7.0|^8.0",
-        "setasign/fpdi-fpdf": "1.*",
+        "setasign/fpdf": "1.*",
+        "setasign/fpdi": "1.*",
         "ext-openssl": "*"
     },
     "require-dev": {
