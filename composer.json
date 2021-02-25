@@ -1,11 +1,11 @@
 {
-    "name": "owenoj/fpdf-password-protect",
+    "name": "owenoj/pdf-password-protect",
     "description": "Laravel package to password protect pdfs",
     "keywords": [
         "owenoj",
         "fpdf-password-protect"
     ],
-    "homepage": "https://github.com/owenoj/fpdf-password-protect",
+    "homepage": "https://github.com/owen-oj/fpdf-password-protect",
     "license": "MIT",
     "type": "library",
     "authors": [
