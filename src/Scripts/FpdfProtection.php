@@ -1,4 +1,5 @@
 <?php
+namespace Owenoj\FpdfPasswordProtect\Scripts;
 /****************************************************************************
 * Software: FPDF_Protection                                                 *
 * Version:  1.05                                                            *
@@ -66,7 +67,7 @@ else
 	}
 }
 
-class FPDF_Protection extends FPDI
+class FpdfProtection extends \FPDI
 {
 	protected $encrypted = false;  //whether document is protected
 	protected $Uvalue;             //U entry in pdf document

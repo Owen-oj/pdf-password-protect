@@ -2,7 +2,8 @@
 
 namespace Owenoj\FpdfPasswordProtect;
 
-use Owenoj\Scripts\FPDF_Protection;
+
+use Owenoj\FpdfPasswordProtect\Scripts\FpdfProtection;
 
 class FpdfPasswordProtect
 {
@@ -14,7 +15,7 @@ class FpdfPasswordProtect
     public static function encryptPdf($file,$password,$destinationFileName)
     {
         try {
-            $pdf = new \FPDF_Protection();
+            $pdf = new FpdfProtection();
             $pagecount = $pdf->setSourceFile($file);
 
             for ($loop = 1; $loop <= $pagecount; $loop++) {
