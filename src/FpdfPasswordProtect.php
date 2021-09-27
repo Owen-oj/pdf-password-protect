@@ -10,7 +10,7 @@ class FpdfPasswordProtect
     public $pdf;
     public function __construct()
     {
-        $this->pdf = new FPDF_Protection();
+
     }
     public static function encryptPdf($file,$password,$destinationFileName)
     {
