@@ -1,29 +1,27 @@
-# Very short description of the package
+# Laravel PDF Password Protect
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/owenoj/fpdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/fpdf-password-protect)
-[![Build Status](https://img.shields.io/travis/owenoj/fpdf-password-protect/master.svg?style=flat-square)](https://travis-ci.org/owenoj/fpdf-password-protect)
-[![Quality Score](https://img.shields.io/scrutinizer/g/owenoj/fpdf-password-protect.svg?style=flat-square)](https://scrutinizer-ci.com/g/owenoj/fpdf-password-protect)
-[![Total Downloads](https://img.shields.io/packagist/dt/owenoj/fpdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/fpdf-password-protect)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/owenoj/pdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/pdf-password-protect)
+[![Total Downloads](https://img.shields.io/packagist/dt/owenoj/pdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/pdf-password-protect)
+![GitHub Actions](https://github.com/owenoj/pdf-password-protect/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
-
+Simple wrapper package around MPDF's `setProtection` method that allows you to set password on PDF files.
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require owenoj/fpdf-password-protect
+composer require owenoj/pdf-password-protect
 ```
 
 ## Usage
 
-``` php
+```php
 // Usage description here
 ```
 
 ### Testing
 
-``` bash
+```bash
 composer test
 ```
 
@@ -41,8 +39,8 @@ If you discover any security related issues, please email owen.j@terktrendz.com 
 
 ## Credits
 
-- [Owen Jubilant](https://github.com/owenoj)
-- [All Contributors](../../contributors)
+-   [Owen Jubilant](https://github.com/owenoj)
+-   [All Contributors](../../contributors)
 
 ## License
 

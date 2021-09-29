@@ -1,10 +1,10 @@
 <?php
 
-namespace Owenoj\FpdfPasswordProtect;
+namespace Owenoj\PdfPasswordProtect;
 
 use Illuminate\Support\ServiceProvider;
 
-class FpdfPasswordProtectServiceProvider extends ServiceProvider
+class PdfPasswordProtectServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,29 +14,29 @@ class FpdfPasswordProtectServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'fpdf-password-protect');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'fpdf-password-protect');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'pdf-password-protect');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'pdf-password-protect');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('fpdf-password-protect.php'),
+                __DIR__.'/../config/config.php' => config_path('pdf-password-protect.php'),
             ], 'config');
 
             // Publishing the views.
             /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/fpdf-password-protect'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/pdf-password-protect'),
             ], 'views');*/
 
             // Publishing assets.
             /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/fpdf-password-protect'),
+                __DIR__.'/../resources/assets' => public_path('vendor/pdf-password-protect'),
             ], 'assets');*/
 
             // Publishing the translation files.
             /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/fpdf-password-protect'),
+                __DIR__.'/../resources/lang' => resource_path('lang/vendor/pdf-password-protect'),
             ], 'lang');*/
 
             // Registering package commands.
@@ -50,11 +50,11 @@ class FpdfPasswordProtectServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'fpdf-password-protect');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'pdf-password-protect');
 
         // Register the main class to use with the facade
-        $this->app->singleton('fpdf-password-protect', function () {
-            return new FpdfPasswordProtect;
+        $this->app->singleton('pdf-password-protect', function () {
+            return new PdfPasswordProtect;
         });
     }
 }

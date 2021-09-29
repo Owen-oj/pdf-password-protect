@@ -3,9 +3,11 @@
     "description": "Laravel package to password protect pdfs",
     "keywords": [
         "owenoj",
-        "fpdf-password-protect"
+        "pdf-password-protect",
+        "pdf protection",
+        "pdf password"
     ],
-    "homepage": "https://github.com/owen-oj/fpdf-password-protect",
+    "homepage": "https://github.com/owen-oj/pdf-password-protect",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,24 +18,22 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4|^8.0",
         "illuminate/support": "^6.0|^7.0|^8.0",
-        "setasign/fpdf": "1.*",
-        "setasign/fpdi": "1.*",
-        "ext-openssl": "*"
+        "mpdf/mpdf": "^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Owenoj\\FpdfPasswordProtect\\": "src"
+            "Owenoj\\PdfPasswordProtect\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Owenoj\\FpdfPasswordProtect\\Tests\\": "tests"
+            "Owenoj\\PdfPasswordProtect\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Owenoj\\FpdfPasswordProtect\\FpdfPasswordProtectServiceProvider"
+                "Owenoj\\PdfPasswordProtect\\PdfPasswordProtectServiceProvider"
             ],
             "aliases": {
-                "FpdfPasswordProtect": "Owenoj\\FpdfPasswordProtect\\FpdfPasswordProtectFacade"
+                "PdfPasswordProtect": "PdfPasswordProtect"
             }
         }
     }
