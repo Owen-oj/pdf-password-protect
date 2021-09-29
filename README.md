@@ -2,9 +2,9 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/owenoj/pdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/pdf-password-protect)
 [![Total Downloads](https://img.shields.io/packagist/dt/owenoj/pdf-password-protect.svg?style=flat-square)](https://packagist.org/packages/owenoj/pdf-password-protect)
-![GitHub Actions](https://github.com/owenoj/pdf-password-protect/actions/workflows/main.yml/badge.svg)
 
 Simple wrapper package around MPDF's `setProtection` method that allows you to set password on PDF files.
+
 ## Installation
 
 You can install the package via composer:
@@ -15,9 +15,13 @@ composer require owenoj/pdf-password-protect
 
 ## Usage
 
+You can use via Facade like so:
+
 ```php
-// Usage description here
+PdfPasswordProtect::encrypt(storage_path('pdf/document.pdf'),storage_path('pdf/'.'encrypted-documented.pdf'),'janedoe');
 ```
+
+The final file will be located in `storage/pdf` as `encrypted-document.pdf`
 
 ### Testing
 
@@ -39,8 +43,8 @@ If you discover any security related issues, please email owen.j@terktrendz.com 
 
 ## Credits
 
--   [Owen Jubilant](https://github.com/owenoj)
--   [All Contributors](../../contributors)
+- [Owen Jubilant](https://github.com/owenoj)
+- [All Contributors](../../contributors)
 
 ## License
 
