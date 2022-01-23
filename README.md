@@ -48,7 +48,7 @@ If you discover any security related issues, please email owen.j@terktrendz.com 
 
 ## Credits
 
-- [Owen Jubilant](https://github.com/owenoj)
+- [Owen Jubilant](https://github.com/owen-oj)
 - [All Contributors](../../contributors)
 
 ## License
