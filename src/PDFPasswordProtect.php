@@ -13,10 +13,15 @@ class PdfPasswordProtect
     public function encrypt($inputFile, $outputFile, $password, $ownerPassword = null)
     {
         $mpdf = new \Mpdf\Mpdf();
-
-        $pagecount = $mpdf->setSourceFile($inputFile);
-        $tplId = $mpdf->ImportPage($pagecount);
-        $mpdf->UseTemplate($tplId);
+    
+        $pageCount = $mpdf->setSourceFile($inputFile);
+    
+        for ($page = 1; $page <= $pageCount; $page++) {
+            $tplId = $mpdf->importPage($page);
+            $wh = $mpdf->getTemplateSize($tplId);
+            $mpdf->AddPage($wh['width'] > $wh['height'] ? 'L' : 'P');
+            $mpdf->UseTemplate($tplId);
+        }
 
         //set owner password to user password if null
         $ownerPassword = is_null($ownerPassword) ? $password : $ownerPassword;
