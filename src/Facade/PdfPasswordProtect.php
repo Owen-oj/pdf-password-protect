@@ -4,9 +4,7 @@ namespace Owenoj\PdfPasswordProtect\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Owenoj\PdfPasswordProtect\Skeleton\SkeletonClass
- */
+
 class PdfPasswordProtect extends Facade
 {
     /**
@@ -14,7 +12,7 @@ class PdfPasswordProtect extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'pdf-password-protect';
     }
