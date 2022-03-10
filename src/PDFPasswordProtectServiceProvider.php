@@ -11,8 +11,6 @@ class PdfPasswordProtectServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      
-
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('pdf-password-protect.php'),
@@ -30,7 +28,7 @@ class PdfPasswordProtectServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('pdf-password-protect', function () {
-            return new PdfPasswordProtect;
+            return new PdfPasswordProtect();
         });
     }
 }
