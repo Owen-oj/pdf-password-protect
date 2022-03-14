@@ -42,7 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PDFPasswordProtectServiceProvider"
+                "Owenoj\\PDFPasswordProtect\\PDFPasswordProtectServiceProvider"
             ],
             "aliases": {
                 "PdfPasswordProtect": "PDFPasswordProtect"
