@@ -1,10 +1,10 @@
 <?php
 
-namespace Owenoj\PdfPasswordProtect;
+namespace Owenoj\PDFPasswordProtect;
 
 use Illuminate\Support\ServiceProvider;
 
-class PdfPasswordProtectServiceProvider extends ServiceProvider
+class PDFPasswordProtectServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -28,7 +28,7 @@ class PdfPasswordProtectServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('pdf-password-protect', function () {
-            return new PdfPasswordProtect();
+            return new PDFPasswordProtect();
         });
     }
 }

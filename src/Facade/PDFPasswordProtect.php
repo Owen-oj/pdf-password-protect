@@ -1,11 +1,11 @@
 <?php
 
-namespace Owenoj\PdfPasswordProtect\Facade;
+namespace Owenoj\PDFPasswordProtect\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
 
-class PdfPasswordProtect extends Facade
+class PDFPasswordProtect extends Facade
 {
     /**
      * Get the registered name of the component.

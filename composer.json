@@ -29,12 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Owenoj\\PdfPasswordProtect\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Owenoj\\PdfPasswordProtect\\Tests\\": "tests"
+            "Owenoj\\PDFPasswordProtect\\": "src/"
         }
     },
     "scripts": {
@@ -47,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Owenoj\\PdfPasswordProtect\\PdfPasswordProtectServiceProvider"
+                "PDFPasswordProtectServiceProvider"
             ],
             "aliases": {
-                "PdfPasswordProtect": "PdfPasswordProtect"
+                "PdfPasswordProtect": "PDFPasswordProtect"
             }
         }
     }
