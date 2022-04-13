@@ -45,7 +45,7 @@
                 "Owenoj\\PDFPasswordProtect\\PDFPasswordProtectServiceProvider"
             ],
             "aliases": {
-                "PdfPasswordProtect": "PDFPasswordProtect"
+                "PDFPasswordProtect": "PDFPasswordProtect"
             }
         }
     }
