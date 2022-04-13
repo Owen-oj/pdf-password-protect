@@ -18,12 +18,12 @@ composer require owenoj/pdf-password-protect
 You can use via Facade like so:
 
 ```php
-PdfPasswordProtect::encrypt(storage_path('pdf/document.pdf'),storage_path('pdf/'.'encrypted-documented.pdf'),'janedoe');
+PDFPasswordProtect::encrypt(storage_path('pdf/document.pdf'),storage_path('pdf/'.'encrypted-documented.pdf'),'janedoe');
 ```
 Encrypt method in detail
 * $inputFile and $outputFile has to be a path like `storage_path("pdf/document.pdf")`
 ```
-PdfPasswordProtect::encrypt($inputFile,outputFile,$password)
+PDFPasswordProtect::encrypt($inputFile,outputFile,$password)
 ```
 
 The final file will be located in `storage/pdf` as `encrypted-document.pdf`
