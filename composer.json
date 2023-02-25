@@ -5,7 +5,9 @@
         "owenoj",
         "pdf-password-protect",
         "pdf protection",
-        "pdf password"
+        "pdf password",
+        "laravel pdf password",
+        "laravel pdf protect"
     ],
     "homepage": "https://github.com/owen-oj/pdf-password-protect",
     "license": "MIT",
@@ -19,13 +21,12 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^7.0|^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
         "mpdf/mpdf": "^8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.7",
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
