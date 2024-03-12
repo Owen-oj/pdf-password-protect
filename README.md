@@ -5,6 +5,8 @@
 
 Simple wrapper package around MPDF's `setProtection` method that allows you to set password on PDF files.
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kkoj)
+
 ## Installation
 
 You can install the package via composer:
